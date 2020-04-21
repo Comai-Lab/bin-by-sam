@@ -1,13 +1,13 @@
 # bin-by-sam
 
-Comai Lab, Ucdavis Genome Center
-Meric Lieberman, Isabelle Henry, 2019
-This work is the property of UC Davis Genome Center - Comai Lab
-
-Use at your own risk. 
-We cannot provide support.
-All information obtained/inferred with this script is without any 
-implied warranty of fitness for any purpose or use whatsoever. 
+Comai Lab, Ucdavis Genome Center  
+Meric Lieberman, Isabelle Henry, 2019  
+This work is the property of UC Davis Genome Center - Comai Lab  
+  
+Use at your own risk.   
+We cannot provide support.  
+All information obtained/inferred with this script is without any   
+implied warranty of fitness for any purpose or use whatsoever.   
 
 ------------------------------------------------------------------------------
 
@@ -31,12 +31,12 @@ This should be run in a directory with the input .sam (or .bam or sam.gz) files.
 -o, output file name  
 -s, bin size (bps)  
 -m, mode - this is the read type. (S or TP are most common) The options are:  
-   S - use this mode if reads are mapped single ended.  
-   PS - reads are mapped paired, but count as if single ended.  
-   TP - reads are mapped paired, this uses the default "Correct" PE mapping flags (For paired end use this unless understand the other options)  
-   TPI - same as TP, but allow odd calculated inserts up to 2kb  
-   TPM - same as TP, but allow same mapping direction for pairs -,- and +,+.  
-   TPA - same as TP, but allow both odd inserts up to 2kb and same mapping direction for pairs -,- and +,+.  
+* S - use this mode if reads are mapped single ended.  
+* PS - reads are mapped paired, but count as if single ended.  
+* TP - reads are mapped paired, this uses the default "Correct" PE mapping flags (For paired end use this unless understand the other options)  
+* TPI - same as TP, but allow odd calculated inserts up to 2kb  
+* TPM - same as TP, but allow same mapping direction for pairs -,- and +,+.  
+* TPA - same as TP, but allow both odd inserts up to 2kb and same mapping direction for pairs -,- and +,+.  
   
 ## Optional:  
 "-c" or "--controlfile", This is for an input sam specific library to be a control for normalization.  
