@@ -22,12 +22,12 @@ bin-by-sam.py -o output-bin-file.txt -s size-of-bins [-c control .sam file] [-u]
 For help  
 bin-by-sam_v7.py -h  
   
-Input:  
-Run in a directory with the input .sam (or .bam or sam.gz) files. If you want to use one of the files as control for the relative coverage, specify the file with the -c option.  
+## Input:  
+This should be run in a directory with the input .sam (or .bam or sam.gz) files. If you want to use one of the files as control for the relative coverage, specify the file with the -c option. If you want to run on a set of files in a different place, pelase use the -l or --listfile command with a text file of full file paths.
   
-#Parameters
+## Parameters
 
-#Required:  
+## Required:  
 -o, output file name  
 -s, bin size (bps)  
 -m, mode - this is the read type. (S or TP are most common) The options are:  
@@ -38,7 +38,7 @@ Run in a directory with the input .sam (or .bam or sam.gz) files. If you want to
    TPM - same as TP, but allow same mapping direction for pairs -,- and +,+.  
    TPA - same as TP, but allow both odd inserts up to 2kb and same mapping direction for pairs -,- and +,+.  
   
-Optional:  
+## Optional:  
 "-c" or "--controlfile", This is for an input sam specific library to be a control for normalization.  
 "-q" or "--minqual", This is for the minimum mapping quality  
 "-b" or "--breaks", This puts several lines of sapcing between references.  
@@ -46,6 +46,7 @@ Optional:
 "-p" or "--ploidy", Ploidy multiplier, default is 2 for diploid  
 "-C" or "--covmode", This is to only output coverage columns, not the relative percent columns as well  
 "-B" or "--bamfile", This uses unsorted .bam files instead of .sam or .sam.gz files. DO NOT USE SORTED BAMS!  
+"-l" or "--listfile, This allows the program to be run on a list of file paths instead of the current working directory.
   
-Output:  
+## Output:  
 One file with a line per bin of each reference sequence and a column for each input .sam library, as well as the relative coverage per input .sam library.  
