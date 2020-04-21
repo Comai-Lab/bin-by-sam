@@ -1,1 +1,0 @@
-../bin-by-sam_v7.py
